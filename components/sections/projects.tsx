@@ -16,9 +16,9 @@ export const ProjectsSection = (
     }[]
 }) => {
   return (
- <section id="projects" className="py-20 bg-white dark:bg-gray-900">
+ <section id="projects" className="py-14 bg-white dark:bg-gray-900">
            <div className="max-w-6xl mx-auto px-4 sm:px-5 ">
-             <h2 className="section-heading text-center">Featured Projects</h2>
+             <h2 className="section-heading text-center">Projects</h2>
              <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
                {projects.map((project) => (
                  <div key={project.id} className="card overflow-hidden group">

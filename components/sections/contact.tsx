@@ -2,6 +2,10 @@ import { Github, Linkedin, Mail, Phone } from 'lucide-react'
 import React from 'react'
 
 export const ContactSection = () => {
+
+  const onHandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  }
   return (
     <section id="contact" className="py-20 bg-white dark:bg-gray-900">
     <div className="max-w-6xl mx-auto px-4 sm:px-5 ">
@@ -27,7 +31,7 @@ export const ContactSection = () => {
               </div>
               <div>
                 <h3 className="text-lg font-medium text-gray-800 dark:text-white">Phone</h3>
-                <a href="tel:+254712345678" className="text-indigo-600 dark:text-indigo-400 hover:underline">+254 712 345 678</a>
+                <a href="tel:+254712345678" className="text-indigo-600 dark:text-indigo-400 hover:underline">+254 759 355 344</a>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -51,7 +55,7 @@ export const ContactSection = () => {
           </div>
         </div>
         <div>
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={onHandleSubmit}>
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
               <input 

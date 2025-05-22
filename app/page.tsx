@@ -24,6 +24,7 @@ import { ProjectsSection } from "@/components/sections/projects";
 import { ExperienceSection } from "@/components/sections/experience";
 import { ContactSection } from "@/components/sections/contact";
 import { Footer } from "@/components/footer";
+import { TopFeatured } from "@/components/sections/top-featured";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("all");
@@ -191,6 +192,7 @@ export default function Home() {
           setActiveTab={setActiveTab}
           activeTab={activeTab}
         />
+        <TopFeatured />
         {/* Projects Section */}
         <ProjectsSection projects={projects} />
         {/* Experience Section */}
